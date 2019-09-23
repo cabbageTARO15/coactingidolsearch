@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h2 共演回数一覧
+    p 共演回数は#{togcount}回です。
+  h2 共演イベント一覧
+    table
+      tr
+        th イベント名
+      each event in eventlist
+        tr
+          td #{event.name}
